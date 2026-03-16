@@ -1,6 +1,5 @@
-import {Route, Routes} from "react-router-dom";
-import LogIn from "../components/Auth/LogIn.jsx";
-import Dashboard from "../components/Dashboard/Dashboard.jsx";
+import { Route, Routes } from "react-router-dom";
+import { Dashboard, LogIn } from "../components";
 
 export const RouterProvider = () =>{
     return (
