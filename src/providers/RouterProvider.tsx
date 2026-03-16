@@ -1,10 +1,10 @@
 import { Route, Routes } from "react-router-dom";
-import { Dashboard, LogIn } from "../components";
+import { Dashboard, Auth } from "../components";
 
 export const RouterProvider = () =>{
     return (
         <Routes>
-            <Route path="/" element={<LogIn/>}/>
+            <Route path="/" element={<Auth/>}/>
             <Route path="/dashboard" element={<Dashboard/>}/>
         </Routes>
     )
