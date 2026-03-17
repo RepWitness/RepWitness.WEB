@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+@theme {
+  --color-core-slate: #6E56CF;
+  --color-power-purple: #1E293B;
+}
