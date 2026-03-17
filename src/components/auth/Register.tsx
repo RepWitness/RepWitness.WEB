@@ -1,4 +1,5 @@
 import { Input } from "../common";
+import { RadioInput } from "../common/input/RadioInput";
 
 interface IRegisterProps{
     goToDashboard: () => void;
@@ -17,29 +18,7 @@ export const Register = ({goToDashboard}:IRegisterProps) =>{
              <Input type="email" placeholder="example@yahoo.com" label="Email"/>
             </div>
             <div className="flex gap-2">
-                <div className="block text-sm w-full">
-                    <span className="mb-2 block text-slate-400">Gender</span>
-                        <div className="flex gap-2">
-                            <label className="flex-1">
-                                <input type="radio" name="gender" value="male" className="peer hidden"required/>
-                                    <div className="bg-slate-700 border border-white/30 h-10 rounded-2xl flex items-center justify-center text-md cursor-pointer peer-checked:bg-purple-500 peer-checked:text-white">
-                                        Male
-                                    </div>
-                            </label>
-                            <label className="flex-1">
-                                <input type="radio" name="gender" value="female" className="peer hidden" />
-                                    <div className="bg-slate-700 border border-white/30 h-10 rounded-2xl flex items-center justify-center text-md cursor-pointer peer-checked:bg-purple-500 peer-checked:text-white">
-                                        Female
-                                    </div>
-                            </label>
-                            <label className="flex-1">
-                                <input type="radio" name="gender" value="other" className="peer hidden" />
-                                    <div className="bg-slate-700 border border-white/30 h-10 rounded-2xl flex items-center justify-center text-md cursor-pointer peer-checked:bg-purple-500 peer-checked:text-white">
-                                        Other
-                                    </div>
-                            </label>
-                        </div>
-                </div>
+                <RadioInput label="Gender" options={["male", "female", "other"]} />
             </div>
             <div className="flex gap-2">
              <Input type="number" placeholder="170" label="Height"/>
