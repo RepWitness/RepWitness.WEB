@@ -1,5 +1,7 @@
+import type { ReactNode } from "react";
+
 export type SideBarButton= {
   name: string,
-  icon: string,
+  icon: ReactNode,
   isActive: boolean
 };
