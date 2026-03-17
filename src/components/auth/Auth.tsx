@@ -2,6 +2,7 @@ import { useState } from "react";
 import { LogIn } from "./LogIn";
 import { Register } from "./Register";
 import { useNavigate } from "react-router-dom";
+import { MainScreen } from "../common";
 
 export const Auth = () => {
   const [isLogIn, setIsLogIn] = useState(false);
@@ -12,7 +13,7 @@ export const Auth = () => {
   }
 
   return (
-    <div className="h-screen w-screen bg-linear-to-br from-power-purple to-core-slate flex items-center justify-center">
+    <MainScreen className="items-center justify-center">
       <div className="w-120 h-auto bg-white/10 backdrop-blur-lg border border-white/20 rounded-3xl flex flex-col items-center text-white px-4 py-10 gap-3">
         <h1 className="text-3xl text-slate-300">RepWitness</h1>
         <h3 className="text-sm text-slate-400">Track. Connect. Improve.</h3>
@@ -25,6 +26,6 @@ export const Auth = () => {
           </button>
         </p>
       </div>
-    </div>
+    </MainScreen>
   );
 };
