@@ -16,8 +16,10 @@ const buttons: SideBarButton[] = [
 export const Dashboard = () => {
     return (
        <MainScreen className="p-4 gap-3">
+        <div className="bg-white/10 backdrop-blur-lg h-full w-full p-2 rounded-2xl flex">
             <SideBar buttons={buttons}/>
-            <div className="h-full w-17/20 bg-white/10 backdrop-blur-lg rounded-2xl"></div>
+            <div className="h-full w-17/20 rounded-2xl"></div>
+        </div>
         </MainScreen>
     )
 }
