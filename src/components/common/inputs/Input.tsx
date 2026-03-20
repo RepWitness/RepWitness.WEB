@@ -13,6 +13,7 @@ export const Input = ({label, type, placeholder}:IInputProps) =>{
                 type={type}
                 className="bg-slate-700 border border-white/30 w-full h-10 rounded-2xl px-4 text-md"
                 placeholder={placeholder}
+                autoComplete="off"
               />
         </label>
     )
