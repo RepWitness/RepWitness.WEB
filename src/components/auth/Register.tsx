@@ -1,5 +1,5 @@
 import { Input } from "../common";
-import { RadioInput } from "../common/input/RadioInput";
+import { RadioInput } from "../common/inputs/RadioInput";
 
 interface IRegisterProps{
     goToDashboard: () => void;

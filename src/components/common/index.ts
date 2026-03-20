@@ -1,2 +1,3 @@
-export * from './input'
+export * from './inputs'
 export * from './screen'
+export * from './buttons'
