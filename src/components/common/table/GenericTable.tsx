@@ -26,7 +26,7 @@ export const GenericTable = <T extends Record<string, any>>({
           <tr key={rowIndex} className="border-t border-white/10 text-slate-100">
             {headElements.map((col, colIndex) => (
               <td className="px-2 py-2" key={colIndex}>
-                {item[col as keyof T]}
+                {item[col.toLowerCase()]}
               </td>
             ))}
           </tr>

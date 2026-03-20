@@ -36,57 +36,51 @@ export const goalsCardElements: CardPropsModel[] = [
   },
 ];
 
-export const WorkoutHeadElements = [
-  "Workout",
-  "Type",
-  "Time",
-  "Duration",
-  "Calories",
-  "Effort",
-];
 
 export const workouts = [
   {
-    name: "Chest Day",
+    workout: "Chest Day",
     type: "Strength",
     time: "01:00 PM",
     duration: "60 min",
-    kcal: 420,
+    calories: 420,
     effort: "High",
   },
   {
-    name: "Leg Day",
+    workout: "Leg Day",
     type: "Strength",
     time: "03:30 PM",
     duration: "75 min",
-    kcal: 600,
+    calories: 600,
     effort: "Very High",
   },
   {
-    name: "HIIT Cardio",
+    workout: "HIIT Cardio",
     type: "Cardio",
     time: "10:00 AM",
     duration: "30 min",
-    kcal: 350,
+    calories: 350,
     effort: "Very High",
   },
   {
-    name: "Back & Biceps",
+    workout: "Back & Biceps",
     type: "Strength",
     time: "05:00 PM",
     duration: "65 min",
-    kcal: 480,
+    calories: 480,
     effort: "High",
   },
   {
-    name: "Light Cardio",
+    workout: "Light Cardio",
     type: "Cardio",
     time: "08:00 AM",
     duration: "40 min",
-    kcal: 250,
+    calories: 250,
     effort: "Medium",
   },
 ];
+
+export const WorkoutHeadElements = Object.keys(workouts[0]);
 
 export const popularExercises = [
   {
