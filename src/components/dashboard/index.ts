@@ -1,3 +1,3 @@
-export * from './Dashboard.tsx'
-export * from './SideBar.tsx'
-export * from './MainContent.tsx'
+export * from './Dashboard'
+export * from './QuoteOfTheMoment'
+export * from './cards'

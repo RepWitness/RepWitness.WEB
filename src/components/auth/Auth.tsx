@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { MainScreen } from "../common";
 
 export const Auth = () => {
-  const [isLogIn, setIsLogIn] = useState(false);
+  const [isLogIn, setIsLogIn] = useState(true);
   const navigate = useNavigate();
 
   function goToDashboard(){

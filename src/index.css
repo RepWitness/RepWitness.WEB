@@ -3,4 +3,6 @@
 @theme {
   --color-core-slate: #6E56CF;
   --color-power-purple: #1E293B;
+
+  --background-image-bench-press: url('/images/bench_press.png');
 }

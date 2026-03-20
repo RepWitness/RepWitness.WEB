@@ -1,3 +1,5 @@
+import { capitalizeString } from "../../../utils/utils";
+
 interface IRadioInputProps{
     label: string,
     options: string[],
@@ -19,7 +21,7 @@ export const RadioInput = ({label, options}:IRadioInputProps) => {
                     required
                 />
                 <div className="bg-slate-700 border border-white/30 h-10 rounded-2xl flex items-center justify-center text-md cursor-pointer peer-checked:bg-purple-500 peer-checked:text-white">
-                    {option.charAt(0).toUpperCase() + option.slice(1)}
+                    {capitalizeString(option)}
                 </div>
             </label>
         );
