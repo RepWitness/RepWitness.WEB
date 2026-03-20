@@ -1,3 +1,5 @@
+import { capitalizeString } from "../../../utils/utils";
+
 interface IGenericTableProps<T> {
   headElements: string[];
   data: T[];
@@ -14,7 +16,7 @@ export const GenericTable = <T extends Record<string, any>>({
         <tr>
           {headElements.map((elem, index) => (
             <th className="px-2 py-2" key={index}>
-              {elem.charAt(0).toUpperCase() + elem.slice(1)}
+              {capitalizeString(elem)}
             </th>
           ))}
         </tr>
