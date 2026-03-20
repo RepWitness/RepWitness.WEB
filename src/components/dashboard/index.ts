@@ -1,5 +1,4 @@
 export * from './Dashboard'
 export * from './SideBar'
-export * from './MainContent'
 export * from './QuoteOfTheMoment'
 export * from './cards'
