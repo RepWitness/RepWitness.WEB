@@ -22,7 +22,7 @@ export const ExerciseCard = ({
       <div className="h-26 w-26 bg-bench-press bg-cover rounded-2xl"></div>
       <div className="h-full w-1/2 flex flex-col gap-2 p-2 justify-center">
         <h1 className="text-md text-white/90">
-          {index}. {title}
+          {index + 1}. {title}
         </h1>
         <h1 className="text-sm text-white/90">{description}</h1>
       </div>

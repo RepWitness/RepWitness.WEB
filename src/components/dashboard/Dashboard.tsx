@@ -6,13 +6,13 @@ import {
   scheduleCardElements,
   goalsCardElements,
 } from "../../dummydata";
-import { ButtonWithIcon, GenericTable, MainScreen } from "../common";
+import { AppScreen, ButtonWithIcon, GenericTable} from "../common";
 import { MainCard, CardWithTitle, ExerciseCard, Card } from "./cards";
 import { QuoteOfTheMoment } from "./QuoteOfTheMoment";
 
 export const Dashboard = () => {
   return (
-    <MainScreen className="p-4">
+    <AppScreen className="p-4">
       <div className="h-full w-17/20 rounded-2xl flex flex-col gap-2">
         <div className="w-full h-1/10 bg-slate-700 rounded-2xl flex">
           <div className="h-full w-2/10 px-4 flex flex-col justify-center">
@@ -70,6 +70,6 @@ export const Dashboard = () => {
           </div>
         </div>
       </div>
-    </MainScreen>
+    </AppScreen>
   );
 };
