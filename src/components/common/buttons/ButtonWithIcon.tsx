@@ -7,6 +7,7 @@ interface IButtonWithIconProps {
   content: string;
   isActive?: boolean;
   activeStyle?: string;
+  onBtnClick: () => void;
 }
 
 export const ButtonWithIcon = ({
@@ -16,6 +17,7 @@ export const ButtonWithIcon = ({
   content,
   isActive,
   activeStyle = "",
+  onBtnClick,
 }: IButtonWithIconProps) => {
   const defaultClass =
     "hover:bg-power-purple transition duration-200 rounded-xl cursor-pointer text-lg text-white/90 h-10 flex items-center px-3 gap-2 py-2";
@@ -24,7 +26,7 @@ export const ButtonWithIcon = ({
   finalClass += ` ${hoverClassName} ${isActive ? activeStyle : ""}`;
 
   return (
-    <button className={finalClass}>
+    <button className={finalClass} onClick={onBtnClick}>
       {icon}
       {content}
     </button>
