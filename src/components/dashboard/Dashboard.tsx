@@ -9,8 +9,10 @@ import {
 import { AppScreen, ButtonWithIcon, GenericTable} from "../common";
 import { MainCard, CardWithTitle, ExerciseCard, Card } from "./cards";
 import { QuoteOfTheMoment } from "./QuoteOfTheMoment";
+import { useNavigate } from "react-router-dom";
 
 export const Dashboard = () => {
+  const navigate = useNavigate();
   return (
     <AppScreen className="p-4">
       <div className="h-full w-17/20 rounded-2xl flex flex-col gap-2">
@@ -26,6 +28,7 @@ export const Dashboard = () => {
               icon={<UserCircle />}
               content="Bolba-Mateescu Andrei"
               hoverClassName="hover:bg-slate-700 hover:border hover:border-power-purple"
+              onBtnClick={()=>{navigate('/profile')}}
             />
           </div>
         </div>
