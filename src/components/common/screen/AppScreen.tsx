@@ -10,11 +10,21 @@ interface IAppScreenProps {
 }
 
 const buttons: SideBarButton[] = [
-  { name: "Dashboard", icon: <Home />, isActive: true },
-  { name: "Exercises", icon: <Dumbbell />, isActive: false },
-  { name: "Workouts", icon: <TrendingUp />, isActive: false },
-  { name: "Goals", icon: <Target />, isActive: false },
-  { name: "Settings", icon: <Settings />, isActive: false },
+  { name: "Dashboard", icon: <Home />, isActive: true, link: "/dashboard" },
+  {
+    name: "Exercises",
+    icon: <Dumbbell />,
+    isActive: false,
+    link: "/dashboard",
+  },
+  {
+    name: "Workouts",
+    icon: <TrendingUp />,
+    isActive: false,
+    link: "/dashboard",
+  },
+  { name: "Goals", icon: <Target />, isActive: false, link: "/dashboard" },
+  { name: "Settings", icon: <Settings />, isActive: false, link: "/dashboard" },
 ];
 
 export const AppScreen = ({ className = "", children }: IAppScreenProps) => {

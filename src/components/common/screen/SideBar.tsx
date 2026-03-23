@@ -25,7 +25,7 @@ export const SideBar = ({ buttons }: ISideBarProps) => {
               key={index}
               isActive={button.isActive}
               activeStyle="bg-power-purple"
-            />
+              onBtnClick={()=>{navigate(button.link)}}/>
           );
         })}
       </div>
